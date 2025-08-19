@@ -5,7 +5,7 @@
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
-    "postCreateCommand": "submodule update --init --recursive",
+    "postCreateCommand": ".devcontainer/setup.sh",
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
