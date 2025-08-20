@@ -1,3 +1,4 @@
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+reinstall-cmake.sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- 1
 cargo install git-cliff
 git submodule update --init --recursive
