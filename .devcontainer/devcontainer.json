@@ -14,10 +14,12 @@
                 "ms-vsliveshare.vsliveshare",
                 "GitHub.copilot",
                 "GitHub.copilot-chat",
+				"GitHub.vscode-pull-request-github",
 				"ms-vscode.cpptools",
 				"ms-vscode.cpptools-extension-pack",
 				"ms-vscode.cpptools-themes",
-				"ms-vscode.cmake-tools"
+				"ms-vscode.cmake-tools",
+				"vscode-icons-team.vscode-icons"
 			]
 		},
         "codespaces": {
