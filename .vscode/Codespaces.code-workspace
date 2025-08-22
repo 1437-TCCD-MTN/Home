@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../Debugging_Warmup01"
+		}
+	],
+	"settings": {
+		"cmake.autoSelectActiveFolder": false,
+		"cmake.exclude": [
+			"/workspaces/Home"
+		]
+	}
+}
