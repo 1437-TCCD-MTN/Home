@@ -19,7 +19,7 @@
 				"ms-vscode.cpptools-extension-pack",
 				"ms-vscode.cpptools-themes",
 				"vscode-icons-team.vscode-icons",
-				"go2sh.cmake-integration-vscode"
+				"vsls-contrib.codetour"
 			]
 		},
         "codespaces": {
