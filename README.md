@@ -20,7 +20,7 @@ Every assignment in this class, from debugging warm-ups to homework, follows the
 
 1.  **Accept the Assignment:** You will receive a GitHub Classroom link for each new assignment (e.g., `homework01`, `debug-warmup01`). Clicking this link will create a new, private repository for you (e.g., `homework01-yourusername`).
 
-2.  **Clone into Your Codespace:** In your Home repository's Codespace terminal, make sure you are in the root directory (`/workspaces/Home`). Clone the new assignment repository here.
+2.  **Clone into Your Codespace:** In your Home repository's Codespace terminal, make sure you are in the root directory (`/workspaces/YourName`). Clone the new assignment repository here.
 
     ```bash
     git clone https://github.com/your-org/homework01-yourusername.git
@@ -34,16 +34,31 @@ This is the core cycle you will follow as you write your code.
 
 1.  **Create Issues:** For most assignments, you will need to create the required "features" from templates. Go to the **"Issues"** tab of the assignment repository and create a new issue from each of the provided templates.
 
-2.  **Create a Feature Branch:** Before writing any code, select an issue to work on and create a branch for it. **Direct pushes to the `main` branch are disabled.**
+2.  **Create a Feature Branch:** Before writing any code, select an issue to work on and create a branch for it. **Direct pushes to the `main` branch are disabled.** Your branch name should follow our naming convention:
+    * `add/{feature-name}`: For adding a new feature.
+    * `fix/{bug-name}`: For fixing a bug.
+    * `update/{feature-name}`: For improving an existing feature.
+    * `try/{idea-name}`: For experimenting.
 
     ```bash
-    # Example for Issue #1
-    git checkout -b feat/1-count-vowels
+    # Example for adding the feature in Issue #1
+    git checkout -b add/1-count-vowels
+    ```
+3. **Make an initial change:** Add a comment on the file you are going to be working with, then add, commit, and push the change to establish the branch.
+
+    ```bash
+    git add <file>
+    git commit
+    git push origin add/1-count-vowels
     ```
 
-3.  **Write Your Code:** Implement the required functionality in the `src/` and `include/` directories.
+4.  **Create a Pull Request:** Go to the assignment repository on GitHub. Follow the steps below to create a Pull Request:
 
-4.  **Build and Test:** To check your work against the provided unit tests, you must configure, build, and run the tests. From the **root of the assignment folder** (e.g., `homework01-yourusername`), run:
+    > **[📄 Read: The Life Cycle of a Pull Request](pull-request.md)**
+
+5.  **Write Your Code:** Implement the required functionality in the `src/` and `include/` directories.
+
+6.  **Build and Test:** To check your work against the provided unit tests, you must configure, build, and run the tests. From the **root of the assignment folder** (e.g., `homework01-yourusername`), run:
 
     ```bash
     # 1. Configure the build system (only needs to be run once)
@@ -68,20 +83,18 @@ This is the core cycle you will follow as you write your code.
     git add src/analyzer.cpp
 
     # Write a clear commit message that closes the corresponding issue
-    git commit -m "feat: Implement count_vowels function (closes #1)"
+    git commit -m "add: Implement count_vowels function (closes #1)"
     ```
 
 2.  **Push Your Branch:** Push your feature branch to GitHub.
 
     ```bash
-    git push origin feat/1-count-vowels
+    git push
     ```
 
-3.  **Create a Pull Request:** Go to the assignment repository on GitHub. You will see a prompt to create a Pull Request from your new branch. Fill out the details and create the PR.
+3.  **Merge and Submit:** For individual assignments, you will merge your own Pull Request. This is the final step of submission. Once your branch is merged into `main`, that feature is considered complete.
 
-4.  **Merge and Submit:** For individual assignments, you will merge your own Pull Request. This is the final step of submission. Once your branch is merged into `main`, that feature is considered complete.
-
-5.  **Clean Up and Repeat:** Before starting the next feature, switch back to your `main` branch and pull the latest changes to ensure your local environment is up-to-date.
+4.  **Clean Up and Repeat:** Before starting the next feature, switch back to your `main` branch and pull the latest changes to ensure your local environment is up-to-date.
 
     ```bash
     git checkout main
